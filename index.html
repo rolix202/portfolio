@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roland - Personal Portfolio</title>
+
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+  </head>
+
+  <body>
+   <div class="container-fluid wrapper">
+      <!--Fixed menu for Desktop starts-->
+      <div class="header d-none d-lg-block">
+        <ul class="menus">
+          <li class="menu_icons active">
+            <i class="fa fa-home"></i>
+            <a href="index.html">
+              <h2>Home</h2>
+            </a>
+          </li>
+          <li class="menu_icons">
+            <i class="fa fa-user"></i>
+            <a href="views/about.html">
+              <h2>About</h2>
+            </a>
+          </li>
+          <li class="menu_icons">
+            <i class="fa fa-briefcase"></i>
+            <a href="views/portfolio.html" onclick="showModal(event)">
+              <h2>Portfolio</h2>
+            </a>
+          </li>
+          <li class="menu_icons pop_up">
+            <i class="fa fa-envelope-open"></i>
+            <a href="#" onclick="showModal(event)">
+              <h2>Contact</h2>
+            </a>
+          </li>
+          <li class="menu_icons pop_up">
+            <i class="fa fa-comments"></i>
+            <a href="#" onclick="showModal(event)">
+              <h2>Blog</h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--Fixed menu for Desktop ends-->
+
+      <!--Mobile Menu starts-->
+
+      <div class="mobile_menu_wrapper">
+        <div class="mobile_menu_bar d-lg-none d-sm-block">
+          <div class="icon_bar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+        <div id="myMobile_menu" class="menu_list">
+          <ul>
+            <li>
+              <a href="index.html" class="active">
+                <i class="fa fa-home"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="views/about.html">
+                <i class="fa fa-user"></i>
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="views/portfolio.html" onclick="showModal(event)">
+                <i class="fa fa-briefcase"></i>
+                <span>Portfolio</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="showModal(event)">
+                <i class="fa fa-envelope-open"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="showModal(event)">
+                <i class="fa fa-comments"></i>
+                <span>Blog</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+
+      <!--Mobile menu ends-->
+
+      <div class="yellow_bg d-none d-lg-block"></div>
+
+      <!--Desktop View Color Switcher-->
+
+      <div class="color_wrapper" id="color_wrapper">
+        <span class="close_btn" id="close_btn">×</span>
+
+        <h3>Select Color</h3>
+
+        <div class="theme_btn_container">
+          <span
+            class="theme_btn"
+            data-color="#ffb400"
+            style="background-color: #ffb400"
+          ></span>
+          <span
+            class="theme_btn"
+            data-color="#6f42c1"
+            style="background-color: #6f42c1"
+          ></span>
+          <span
+            class="theme_btn"
+            data-color="#e83e8c"
+            style="background-color: #e83e8c"
+          ></span>
+          <span
+            class="theme_btn"
+            data-color="#28a745"
+            style="background-color: #28a745"
+          ></span>
+          <span
+            class="theme_btn"
+            data-color="#17a2b8"
+            style="background-color: #17a2b8"
+          ></span>
+          <span
+            class="theme_btn"
+            data-color="#dc3545"
+            style="background-color: #dc3545"
+          ></span>
+        </div>
+      </div>
+
+      <div class="color_switcher d-none d-lg-block" id="color_switcher">
+        <div class="switcher_btn" id="switcher_btn">
+          <i class="fa fa-cog fa-spin"></i>
+        </div>
+      </div>
+
+      <!--Desktop View Color Switcher ends here-->
+
+      <div class="row inner_wrapper">
+        <div class="col-12 col-lg-4">
+          <div class="left_side d-none d-lg-block">
+            <div class="overlay"></div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="home_writeUp">
+            <div class="writeUp">
+              <img
+                src="images/roland.png"
+                class="d-none d-sm-block d-lg-none my_Pishure"
+                alt="Oodo Roland - Picture"
+              />
+              <div class="firstH">
+                <h1 class="name">
+                  I'm Williams Roland.<br /><span class="role"
+                    >Web Designer</span
+                  >
+                </h1>
+                <p>
+                  I'm a Nigerian based web designer & Back‑end developer focused
+                  on crafting clean & user‑friendly experiences, I am passionate
+                  about building excellent software that improves the lives of
+                  those around me.
+                </p>
+              </div>
+              <div class="button_mobile">
+                <a class="button" href="#">
+                  <span class="button-text">more about me</span>
+                  <span class="button-icon fa fa-arrow-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/modal_construction.js"></script>
+  </body>
+</html>
